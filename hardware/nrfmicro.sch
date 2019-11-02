@@ -24,14 +24,10 @@ Text Label 6350 1300 0    60   ~ 0
 P0.30
 Text Label 6350 1400 0    60   ~ 0
 P0.31
-Text Label 6350 1500 0    60   ~ 0
-P0.29
 Text Label 6350 1600 0    60   ~ 0
 P0.02
-Text Label 6350 2000 0    60   ~ 0
+Text Label 6350 1900 0    60   ~ 0
 P1.11
-Text Label 5350 1500 2    60   ~ 0
-P0.20
 $Comp
 L nrfmicro-rescue:USB_OTG J1
 U 1 1 5B116606
@@ -337,15 +333,15 @@ Text GLabel 3750 4550 2    60   Input ~ 0
 VBAT
 Text GLabel 950  6500 0    60   Input ~ 0
 VBUS
-Text Label 5350 2000 2    60   ~ 0
-P1.06
-Text Label 5350 1900 2    60   ~ 0
-P0.10
+Text Label 4075 925  2    60   ~ 0
+P1.09
 Text Label 5350 1800 2    60   ~ 0
-P0.09
+P0.10
 Text Label 5350 1700 2    60   ~ 0
+P0.09
+Text Label 5350 1000 2    60   ~ 0
 P0.24
-Text Label 5350 1600 2    60   ~ 0
+Text Label 5350 900  2    60   ~ 0
 P0.13
 Text Label 1650 2550 2    60   ~ 0
 P0.08
@@ -369,17 +365,6 @@ Wire Wire Line
 	1250 1450 1650 1450
 Wire Wire Line
 	3000 3050 3100 3050
-$Comp
-L power:GND #PWR0109
-U 1 1 5C8D3082
-P 3100 3050
-F 0 "#PWR0109" H 3100 2800 50  0001 C CNN
-F 1 "GND" H 3105 2877 50  0000 C CNN
-F 2 "" H 3100 3050 50  0001 C CNN
-F 3 "" H 3100 3050 50  0001 C CNN
-	1    3100 3050
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR0108
 U 1 1 5C8CAE92
@@ -426,8 +411,6 @@ F 3 "" H 2350 2150 50  0001 C CNN
 $EndComp
 Text Label 1650 2650 2    60   ~ 0
 P1.09
-Text GLabel 3300 2850 2    60   Input ~ 0
-RESET
 Text Label 1650 1950 2    60   ~ 0
 P0.30
 Text Label 1650 1350 2    60   ~ 0
@@ -494,13 +477,11 @@ Text GLabel 8450 1250 2    60   Input ~ 0
 DATA-
 Wire Wire Line
 	2050 5250 2150 5250
-Text Label 5350 1300 2    60   ~ 0
-P0.15
-Text Label 5350 1400 2    60   ~ 0
-P0.17
-Text Label 6350 1700 0    60   ~ 0
+Text Label 4075 1025 2    60   ~ 0
+P0.05
+Text Label 5350 1600 2    60   ~ 0
 P1.13
-Text Label 6350 1900 0    60   ~ 0
+Text Label 6350 1700 0    60   ~ 0
 P0.28
 Text Label 6350 1800 0    60   ~ 0
 P0.03
@@ -516,10 +497,8 @@ Text Label 3000 1650 0    60   ~ 0
 P1.02
 Wire Wire Line
 	3000 1850 3300 1850
-Text GLabel 1300 1150 0    60   Input ~ 0
-BLUE_LED
 Wire Wire Line
-	1650 1150 1300 1150
+	700  -325 350  -325
 Text Label 3000 2850 0    60   ~ 0
 P0.18
 Wire Wire Line
@@ -530,8 +509,6 @@ Wire Wire Line
 	3000 1650 3300 1650
 Wire Wire Line
 	1650 2850 1350 2850
-NoConn ~ 3000 2950
-NoConn ~ 3000 3150
 Text Label 1650 2050 2    60   ~ 0
 P0.00
 Text Label 1650 2250 2    60   ~ 0
@@ -547,26 +524,14 @@ F 3 "" H 5850 1250 60  0001 C CNN
 	1    5850 1250
 	1    0    0    -1  
 $EndComp
-Text GLabel 1000 2350 0    60   Input ~ 0
+Text GLabel 1250 800  2    60   Input ~ 0
 TXD
-Text GLabel 1000 2550 0    60   Input ~ 0
-RXD
 Text GLabel 1050 3150 0    60   Input ~ 0
 BOOT
 Wire Wire Line
 	1050 3150 1650 3150
 Wire Wire Line
-	1650 2350 1000 2350
-Wire Wire Line
-	1650 2550 1000 2550
-Text Label 7350 1350 0    60   ~ 0
-S5
-Text Label 7350 1450 0    60   ~ 0
-S6
-Text Label 7350 1650 0    60   ~ 0
-S8
-Text Label 7350 1550 0    60   ~ 0
-S7
+	600  800  1250 800 
 $Comp
 L nrfmicro-rescue:GND #PWR0111
 U 1 1 5C7EA1CF
@@ -594,12 +559,6 @@ $EndComp
 Text GLabel 2825 6200 2    60   Input ~ 0
 VBAT
 Wire Wire Line
-	1650 2250 1050 2250
-Wire Wire Line
-	1650 2050 1300 2050
-Wire Wire Line
-	1300 2050 1300 1950
-Wire Wire Line
 	1050 6500 950  6500
 Connection ~ 1050 6500
 Wire Wire Line
@@ -624,9 +583,9 @@ Wire Wire Line
 	7025 1200 6350 1200
 Wire Wire Line
 	6350 1100 6675 1100
-Text GLabel 5350 900  0    60   Input ~ 0
+Text GLabel 1775 600  0    60   Input ~ 0
 TXD
-Text GLabel 5350 1000 0    60   Input ~ 0
+Text GLabel 1775 700  0    60   Input ~ 0
 RXD
 $Comp
 L nrfmicro-rescue:GND #PWR0101
@@ -654,8 +613,6 @@ F 3 "" H 4925 1200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4925 1200 5350 1200
-NoConn ~ 1300 1950
-NoConn ~ 1050 2250
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 5D255F9A
@@ -734,4 +691,41 @@ F 3 "" H 5950 4775 50  0001 C CNN
 	1    5950 4775
 	1    0    0    -1  
 $EndComp
+Text GLabel 350  -325 0    60   Input ~ 0
+BLUE_LED
+$Comp
+L power:GND #PWR0109
+U 1 1 5C8D3082
+P 3100 3050
+F 0 "#PWR0109" H 3100 2800 50  0001 C CNN
+F 1 "GND" H 3105 2877 50  0000 C CNN
+F 2 "" H 3100 3050 50  0001 C CNN
+F 3 "" H 3100 3050 50  0001 C CNN
+	1    3100 3050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3000 3150 2    60   Input ~ 0
+VDH
+Text GLabel 3000 2950 2    60   Input ~ 0
+DCH
+Text Label 5350 1300 2    60   ~ 0
+P1.10
+Text Label 6350 1500 0    60   ~ 0
+P0.29
+Text GLabel 3300 2850 2    60   Input ~ 0
+RESET
+Text Label 6350 2000 0    60   ~ 0
+P0.18
+Wire Wire Line
+	600  600  1250 600 
+Text GLabel 1250 600  2    60   Input ~ 0
+RXD
+Text Label 5350 1500 2    60   ~ 0
+P0.01
+Text Label 5350 1400 2    60   ~ 0
+P0.00
+Text Label 5350 1900 2    60   ~ 0
+P0.01
+Text Label 5350 2000 2    60   ~ 0
+P0.00
 $EndSCHEMATC
